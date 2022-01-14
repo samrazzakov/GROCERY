@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery store</title>
+ 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <!-- header-->
+<section class="header">
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i>Grocery</a>
+    <nav class="navbar">
+        <a href="#home">Главная</a>
+        <a href="#features">Особенности</a>
+        <a href="#products">Продукты</a>
+        <a href="#categories">Категории</a>
+        <a href="#review">Отзывы</a>
+        <a href="#blogs">Блог</a>
+
+
+    </nav>
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Найти продукт..." class="box">
+        <laber for="search-box" class="fas fa-search"></laber>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>Арзубы</h3>
+                <span class="price">280rub/-</span>
+                <span class="quantity">Кол-во: 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>Лук</h3>
+                <span class="price">30rub/-</span>
+                <span class="quantity">Кол-во: 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>Курочка</h3>
+                <span class="price">220rub/-</span>
+                <span class="quantity">Кол-во: 1</span>
+            </div>
+        </div>
+        <div class="total">Всего: 530 rub</div>
+        <a href="#" class="btn">Покупка</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>Войти сейчас</h3>
+        <input type="email" placeholder="Почта" class="box">
+        <input type="password" placeholder="Вводите пароль" class="box">
+        <p>Забыли пароль? <a href="#">Нажать сюда</a></p>
+        <p>Регистрация <a href="#">Создать аккаунт</a></p>
+        <input type="submit" value="Войти" class="btn">
+
+    </form>
+
+
+</section>
+
+ <!-- header-->
+ <!-- home-->
+
+<section class="home" id="home">
+
+    <div class="content">
+
+    <h3>Свежие и <span>натуральные </span> Продукты</span></h3>
+    <p>Добро пожаловать в продуктовый магазин "Продуктос"</p>
+        <a href="#" class="btn">Приобрести</a>
+    </div>
+</section>
+
+
+ <!-- home-->
+ <!-- feat-->
+<section class="features" id="features">
+
+    <h1 class="heading">Наши <span>Преимушества</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <h3>Свежее и натуральное</h3>
+            <p>Покупая в продуктовой Grocery, обеспечиваете себя только самой лучшей
+                продукцией, существующей на рынке. Бегите к нам, мы дадим вам только самое лучшее!</p>
+                <a href="#" class="btn">Приобрести</a>
+            </p>
+        </div>
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>Бесплатная доставка</h3>
+            <p>Покупая в продуктовой Grocery, обеспечиваете себя только самой лучшей
+                продукцией, существующей на рынке. Бегите к нам, мы дадим вам только самое лучшее!</p>
+            </p>
+            <a href="#" class="btn">Приобрести</a>
+        </div>
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>Удобная оплата</h3>
+            <p>Покупая в продуктовой Grocery, обеспечиваете себя только самой лучшей
+                продукцией, существующей на рынке. Бегите к нам, мы дадим вам только самое лучшее!</p>
+            </p>
+            <a href="#" class="btn">Приобрести</a>
+        </div>
+    </div>
+
+
+
+
+</section>
+<!-- feat-->
+<!-- products-->
+ <section class="products" id="products">
+
+     <h1 class="heading">Наши <span>продукты</span></h1>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="image/product-1.png" alt="">
+                    <h3>свежие апельсины</h3>
+                    <div class="price"> 250-300 рублей </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Добавить в корзинку</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="image/product-2.png" alt="">
+                <h3>Добрейший лук</h3>
+                <div class="price"> 250-300 рублей </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Добавить в корзинку</a>
+        </div>
+        <div class="swiper-slide box">
+            <img src="image/product-3.png" alt="">
+            <h3>свежее мясо</h3>
+            <div class="price"> 250-300 рублей </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+        </div>
+        <a href="#" class="btn">Добавить в корзинку</a>
+    </div>
+    <div class="swiper-slide box">
+        <img src="image/product-4.png" alt="">
+        <h3>свежие капусты</h3>
+        <div class="price"> 250-300 рублей </div>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+    </div>
+    <a href="#" class="btn">Добавить в корзинку</a>
+</div>
+</div>
+</div>
+<div class="swiper product-slider">
+    
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+            
+            <img src="image/product-5.png" alt="">
+            <h3>свежие апельсины</h3>
+            <div class="price"> 250-300 рублей </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+        </div>
+        <a href="#" class="btn">Добавить в корзинку</a>
+    </div>
+    <div class="swiper-slide box">
+        <img src="image/product-6.png" alt="">
+        <h3>Эко авокады</h3>
+        <div class="price"> 250-300 рублей </div>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+    </div>
+    <a href="#" class="btn">Добавить в корзинку</a>
+</div>
+<div class="swiper-slide box">
+    <img src="image/product-7.png" alt="">
+    <h3>Лучшие морковки </h3>
+    <div class="price"> 250-300 рублей </div>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">Добавить в корзинку</a>
+</div>
+<div class="swiper-slide box">
+<img src="image/product-8.png" alt="">
+<h3>свежие лемончики</h3>
+<div class="price"> 250-300 рублей </div>
+<div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+</div>
+<a href="#" class="btn">Добавить в корзинку</a>
+</div>
+</div>
+</div>
+
+        </div>
+ </section>
+<!-- products-->
+<!-- category-->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading">Категории<span> продуктов</span></h1>
+         
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/cat-1.png" alt="">
+                    <h3>Овощи</h3>
+                        <p>Скидки до 45 процентов</p>
+                        <a href="#" class="btn">Купить сейчас</a>
+            </div>
+            <div class="box">
+                <img src="image/cat-2.png" alt="">
+                    <h3>Фрукты</h3>
+                        <p>Скидки до 45 процентов</p>
+                        <a href="#" class="btn">Купить сейчас</a>
+            </div> 
+            <div class="box">
+                <img src="image/cat-3.png" alt="">
+                    <h3>Молочка</h3>
+                        <p>Скидки до 45 процентов</p>
+                        <a href="#" class="btn">Купить сейчас</a>
+            </div>
+            <div class="box">
+                <img src="image/cat-4.png" alt="">
+                    <h3>свежее мясо</h3>
+                        <p>Скидки до 45 процентов</p>
+                        <a href="#" class="btn">Купить сейчас</a>
+            </div>
+        </div>
+
+</section>
+
+<!-- category-->
+<!-- rewiew-->
+
+<section class="review" id="review">
+
+    <h1 class="heading">отзывы<span>покупателей</span></h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper"> 
+                <div class="swiper-slide box">
+                    <img src="image/pic-1.png" alt="">
+                    <p>Хорошая компания, всегда предлагает лучшее соотношение цена/качество</p>
+                    <h3>Артур Михлухо-Маклай</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/pic-2.png" alt="">
+                    <p>Хорошая компания, всегда предлагает лучшее соотношение цена/качество</p>
+                    <h3>Рената мели</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/pic-3.png" alt="">
+                    <p>Хорошая компания, всегда предлагает лучшее соотношение цена/качество</p>
+                    <h3>Ева Елфи</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+<!-- rewiew-->
+<!-- blogs-->
+
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading">наш <span>Блог</span></h1>
+
+    <div class="box-container">
+        
+        <div class="box">
+            <img src="image/blog-1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user"></i>Пользователь</a>
+                    <a href="#"><i class="fas fa-calendar"></i>1 января, 2022 года</a>
+                </div>
+
+                <h3>свежие и натуральные фрукты и овощи</h3>
+                <p>Покупая в продуктовой Grocery, обеспечиваете себя только самой лучшей
+                    продукцией, существующей на рынке. Бегите к нам, мы дадим вам только самое лучшее!</p>
+                    <a href="#" class="btn">читать</a>
+            </div>
+
+        </div>
+        <div class="box">
+            <img src="image/blog-2.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user"></i>Пользователь</a>
+                    <a href="#"><i class="fas fa-calendar"></i>1 января, 2022 года</a>
+                </div>
+
+                <h3>свежие и натуральные фрукты и овощи</h3>
+                <p>Покупая в продуктовой Grocery, обеспечиваете себя только самой лучшей
+                    продукцией, существующей на рынке. Бегите к нам, мы дадим вам только самое лучшее!</p>
+                    <a href="#" class="btn">читать</a>
+            </div>
+
+        </div>
+        <div class="box">
+            <img src="image/blog-3.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user"></i>Пользователь</a>
+                    <a href="#"><i class="fas fa-calendar"></i>1 января, 2022 года</a>
+                </div>
+
+                <h3>свежие и натуральные фрукты и овощи</h3>
+                <p>Покупая в продуктовой Grocery, обеспечиваете себя только самой лучшей
+                    продукцией, существующей на рынке. Бегите к нам, мы дадим вам только самое лучшее!</p>
+                    <a href="#" class="btn">читать</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</section>
+<!-- blogs-->
+<!--footeer-->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Grocery<i class="fas fa-shopping-basket"></i></h3>
+            <p>Социальные сети</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"> </a>
+                <a href="#" class="fab fa-twitter"> </a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"> </a>
+                <a href="#" class="fab fa-telegram"> </a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Наши контакты</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +7(999)832-64-01 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +7(923)44-54-399 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> samrazzakov@mail.ru </a>
+            <a href="#" class="links"> <i class="fas fa-map-market-alt"></i> Москва, Россия </a>
+        </div>
+        <div class="box">
+            <h3>Быстрые переходы</h3>
+            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Главная</a>
+            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Особенности</a>
+            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Продукты</a>
+            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Категории</a>
+            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Отзывы</a>
+            <a href="#" class="links"><i class="fas fa-arrow-right"></i>Блог</a>
+        </div>
+        <div class="box">
+            <h3>Новости</h3>
+            <p>Подписаться под последние обновления</p>
+            <input type="email" placeholder="Ваша почта" class="email">
+            <input type="submit" value="Подписаться" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+     
+        </div>
+
+
+    </div>
+
+
+
+    <div class="credit">создан <span> Сыймыком Раззаковым</span></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- blogs-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="java.js"></script>
+</body>
+</html>
